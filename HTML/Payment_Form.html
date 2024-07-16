@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Gateway</h1>
+        <hr>
+        <h2>Contact Details</h2>
+        <div>
+            <p>Name </p>
+            <input type="text" name="name" id="name">
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label> <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        </fieldset>
+            <p>Address</p>
+            <textarea name="address" id="address" cols="100"></textarea>
+            <p>Email</p>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <h2>Payment Details</h2>
+            <p>Payment mode</p>
+            <select name="mode" id="mode">
+                <option value="">--Select a Payment Mode</option>
+                <option value="UPI">UPI</option>
+                <option value="Card">Card</option>
+                <option value="Net Banking">Net Banking</option>
+            </select>
+            <p>Date of transaction</p>
+            <input type="date" name="Date" id="Date">
+        </div>
+        
+        
+    <div class="button">
+        <input class="button1" type="reset" value="Clear Form">
+
+
+        <input class="button2" type="submit" value="PayNow">
+    </div>   
+
+    </form>
+
+  
+</body>
+</html>

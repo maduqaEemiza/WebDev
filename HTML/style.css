@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body{
+    background: url(https://img.freepik.com/free-photo/wristwatch-cellphone-credit-card-blue-surface-online-shopping_23-2148101589.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Quicksand;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    padding : 5% 34%;
+    border-bottom: 200px;
+    font-size: 20px;
+    /* background-color: rgb(124, 121, 121) */
+    ;
+    
+    
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+textarea,select
+
+{
+    width: 100%;
+    margin-top: 2px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid grey;
+    box-shadow: none;
+    background-color: transparent;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+select:hover,
+textarea:hover
+{
+    border-bottom: 2px solid #00eeff;
+    
+}
+fieldset:hover{
+    border: 2px solid #00eeff
+}
+hr{
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+hr:hover{
+    border-color: #00eeff;
+}
+form{
+    
+    padding: 2%;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px 7px rgba(0, 0, 0, 0.438);
+}
+select,input[type="date"]{
+    color:black;
+    font-size: 16px;
+}
+.button{
+    display: flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+}
+.button1,.button2{
+    font-family: quicksand;
+    font-weight: 500;
+    font-size: 30px;
+    border: 4px solid grey;
+    border-radius: 20px;
+    padding: 4%;
+    margin-top: 15px;
+    color: black;
+    background-color: whitesmoke;
+
+}
+.button1:hover,.button2:hover{
+    border: 4px solid #00eeff;;
+}
+
+p{
+    font-size: 24px;
+}
+textarea{
+    resize: none;
+    width: 100%;
+}
+fieldset label{
+    cursor: pointer;
+}
