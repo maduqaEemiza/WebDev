@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .fcontainer_row1,.fcontainer_row2,.fcontainer_row3{
+            display: flex;
+            /* justify-content: space-evenly; */
+            align-items: center;
+        }
+        
+
+        .row1,.row2,.row3{
+            background-color: rgb(212, 124, 9);
+            border: none;
+            border-radius: 10px;
+
+        }
+        
+        .irow1,.irow2,.irow3{
+            background-color: rgb(240, 238, 235);
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            margin: 6px;
+            flex-wrap: wrap;
+
+
+        }
+        .irow1{
+            height:100%;
+        }
+        .ibigbox{
+            height: 200px;
+            margin-top: 30px;
+            
+        }
+        .fcontainer_row1{
+            height: 50%;
+        }
+        .row1{
+            font-size: 40px;
+            width: 33%;
+            height: 300px;
+            margin: 9px;
+        }
+        .row2{
+            font-size: 40px;
+            width: 100%;
+            height: 125px;
+            margin: 9px;
+        }
+        .row3{
+            font-size: 40px;
+            width: 100%;
+            height: 62.5px;
+            margin: 9px;
+        }
+        #box1{
+            overflow:auto;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="fcontainer_row1">
+            <div class="row1" id="box1">1
+                <div class="ibigbox">
+                <div class="fcontainer_row1">
+                    <div class="irow1">1</div>
+                    <div class="irow1">2</div>
+                    <div class="irow1">3</div>
+                </div>
+        
+                <div class="fcontainer_row2">
+                    <div class="irow2">1</div>
+                    <div class="irow2">2</div>
+                    <div class="irow2">3</div>
+                    <div class="irow2">4</div>
+                </div>
+        
+                <div class="fcontainer_row3">
+                    <div class="irow3">1</div>
+                    <div class="irow3">2</div>
+                    <div class="irow3">3</div>
+                    <div class="irow3">4</div>
+                    <div class="irow3">5</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row1" id="box2">2</div>
+            <div class="row1">3</div>
+        </div>
+
+        <div class="fcontainer_row2">
+            <div class="row2">1</div>
+            <div class="row2">2</div>
+            <div class="row2">3</div>
+            <div class="row2">4</div>
+        </div>
+
+        <div class="fcontainer_row3">
+            <div class="row3">1</div>
+            <div class="row3">2</div>
+            <div class="row3">3</div>
+            <div class="row3">4</div>
+            <div class="row3">5</div>
+        </div>
+    </div>    
+</body>
+</html>
