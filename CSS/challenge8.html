@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 8</title>
+    <style>
+        body{
+            
+        }
+        .container{
+            display: grid;
+            height: 100%;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(28,1fr);
+            gap: 2px;
+            grid-auto-flow: column;
+        }
+        .container > *{
+            background: #41bb6a;
+            border-radius: 3px;
+        }
+
+        .col1{
+            grid-row: span 28;
+        }
+        .col2{
+            grid-row: span 14;
+        }
+        .col3{
+            grid-row: span 9;
+            
+        }
+        .col4{
+            grid-row: span 7;
+        }
+        .col5{
+            grid-row: span 4;
+        }
+        .col6{
+            grid-row: span ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col1">1</div>
+        <div class="col2">2</div>
+        <div class="col2">3</div>
+        <div class="col3">4</div>
+        <div class="col3">5</div>
+        <div class="col3">6</div>
+        <div class="col4">7</div>
+        <div class="col4">8</div>
+        <div class="col4">9</div>
+        <div class="col4">10</div>
+        <div class="col5">11</div>
+        <div class="col5">12</div>
+        <div class="col5">13</div>
+        <div class="col5">14</div>
+        <div class="col5">15</div>
+        <div class="col5">16</div>
+        <div class="col6">17</div>
+        <div class="col6">18</div>
+        <div class="col6">19</div>
+        <div class="col6">20</div>
+        <div class="col6">21</div>
+        <div class="col6">22</div>
+        <div class="col6">23</div>
+        <div class="col6">24</div>
+        <div class="col6">25</div>
+        <div class="col6">26</div>
+        <div class="col6">27</div>
+        <div class="col6">28</div>
+    </div>
+</body>
+</html>

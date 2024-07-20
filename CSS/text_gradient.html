@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text gradient</title>
+    <style>
+        body{
+            display: flex;
+            
+            background: #2b2b2b;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .text{
+            display: flex;
+            background-clip:text;
+            color: aliceblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            font-size: 100px;
+            font-weight:900;
+            background: linear-gradient(45deg, #fc00ff, #00dbde);
+            background-clip: text;
+            color: transparent;
+            transition-duration:1000ms;
+            transition-property: background;
+            transition-timing-function: ease-in-out;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="text">
+        MacBook Pro.
+    </div>
+</body>
+</html>
