@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrap {
+    display: flex;
+
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: 1400px;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+.box {
+    border: none;
+    background-color: grey;
+    height: 200px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 4px;
+
+}
+
+.greyish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #222020;
+    height: 200px;
+    width: 300px;
+    color: white;
+    font-size: 30px;
+    border-radius: 4px;
+
+}
+
+.scaleX {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+}
+
+.scaleX:hover {
+    transform: scaleX(2);
+    opacity: 80%;
+}
+
+.scaleY {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+}
+
+.scaleY:hover {
+    transform: scaleY(2);
+    opacity: 80%;
+}
+
+.scale {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.scale:hover {
+    transform: scale(1.3);
+    opacity: 80%;
+}
+
+.translateX {
+    transform: translateX(0%);
+    transition: transform 0.5s ease;
+}
+
+.translateX:hover {
+    transform: translateX(20%);
+    opacity: 80%;
+}
+
+.translateY {
+    transform: translateY(0%);
+    transition: transform 0.5s ease;
+}
+
+.translateY:hover {
+    transform: translateY(20%);
+    opacity: 80%;
+}
+
+.translate {
+    transform: translate(0%);
+    transition: transform 0.5s ease;
+}
+
+.translate:hover {
+    transform: translate(20%, 20%);
+    opacity: 80%;
+}
+
+.rotate {
+    transform: rotate(0);
+    transition: transform 0.5s ease;
+}
+
+.rotate:hover {
+    transform: rotate(270deg);
+    opacity: 80%;
+
+}
+
+.matrix {
+    transform: matrix(1, 1, 1, 1);
+    transition: transform 0.5s ease;
+}
+
+.matrix:hover {
+    transform: matrix(1, -1, 0, 1, 0, 0);
+    opacity: 80%;
+
+}
+
+.skew {
+    transform: skew(0deg);
+    transition: transform 1s ease;
+}
+
+.skew:hover {
+    transform: skew(70deg);
+    opacity: 80%;
+
+}
+
+.skewX {
+    transform: skewX(0deg);
+    transition: transform 1s ease;
+}
+
+.skewX:hover {
+    transform: skewX(70deg);
+    opacity: 80%;
+
+}
+
+.skewY {
+    transform: skewY(0deg);
+    transition: transform 1s ease;
+}
+
+.skewY:hover {
+    transform: skewY(70deg);
+    opacity: 80%;
+
+}
+
+.translate3d {
+    transform: translate3d(1px, 1px, 1);
+    transition: transform 0.5s ease;
+}
+
+.translate3d:hover {
+    transform: translate3d(100px, 100px, 800px);
+    opacity: 80%;
+
+}
+
+.matrix3d {
+    transform: matrix3d(1);
+    transition: transform 0.5s ease;
+}
+
+.matrix3d:hover {
+    transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1);
+    opacity: 80%;
+
+}
+
+.rotateX {
+    transform: rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.rotateY {
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease;
+}
+
+.translateZ {
+    transform: translateZ(0px);
+    transition: transform 0.5s ease;
+}
+
+.rotateX:hover {
+    transform: rotateX(60deg);
+    opacity: 80%;
+}
+
+.rotateY:hover {
+    transform: rotateY(60deg);
+    opacity: 80%;
+}
+
+.translateZ:hover {
+    /*Persepective defines how far the viewer is from the screen */
+    transform: perspective(700px) translateZ(300px);
+    opacity: 80%;
+}
