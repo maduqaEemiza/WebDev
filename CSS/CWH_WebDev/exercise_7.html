@@ -12,17 +12,23 @@
             margin:0;
             padding: 0;
         }
-        
+        body{
+           
+        }
         .main{
             display: flex;
-            margin: 10px 200px;
-            height: 100px;
+            margin: 10px 30px;
+            height: 10vh;
+            /* width: 60vw; */
+            gap:40px;
             justify-content: space-between;
+            flex-wrap: wrap;
 
         }
         #logo,.logo{
             height: 100%;
             align-self: center;
+            justify-items: flex-start;
 
         }
         #translate_icon{
@@ -53,6 +59,51 @@
         .arrow{
             height: 13px
         }
+
+        .cont{
+            display: flex;
+            /* height: 80vh;
+            width: 100vw; */
+            display: flex;
+            /* border: 2px dashed red; */
+            margin-top: 90px;
+            justify-content: center;
+
+        }
+        .grid{
+            display: grid;
+            width: 50vw;
+            grid-template-columns: repeat(3,1fr);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            gap: 20px;
+
+
+        }
+
+        .button{
+            display: block;
+            background: #39af22;
+            color: white;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        .lang{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px 30px;
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        
+        }
+        .last{
+            grid-row: 4/5;
+            grid-column: 2/3;
+        }
+
     </style>
 </head>
 <body>
@@ -69,5 +120,19 @@
             <img id="translate_icon" src="https://img.icons8.com/?size=100&id=12515&format=png&color=000000" alt="img">
         </div>
     </div>
+<div class="cont">
+    <div class="grid">
+        <div class="lang">English <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">Deutsch <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">Italiano <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">Español <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">français <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">Português brasileiro <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">日本 <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">한국어 <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang">中国 <input class="button" type="button" value="Download 64-bit"></div>
+        <div class="lang last">中國 <input class="button" type="button" value="Download 64-bit"></div>
+    </div>
+</div>
 </body>
 </html>
