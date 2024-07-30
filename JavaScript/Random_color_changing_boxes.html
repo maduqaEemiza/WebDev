@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .box{
+            border: 2px solid black;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(red, green, blue);
+        }
+        button{
+            display: block;
+            margin: 100px auto;
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(172, 172, 172);
+            color: white;
+            font-size: 20px;
+            transform: scale(1.2);
+            transition-property: transform;
+            transition-duration: 40ms;
+        }
+        #btn:active{
+            transform: scale(1.25);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+    <button id="btn">Click Me!</button>
+
+    <script>
+        console.log("I'm working!")
+        let box = document.getElementsByClassName("box")
+        console.log(box)
+
+        function getRandomRange(min, max){
+            Math.ceil(min)
+            Math.floor(max)
+            let num = Math.floor(Math.random()*(max - min +1)) + min
+            return num
+        }
+
+        for (let i = 0; i < 5; i++) {
+            let r = getRandomRange(0,255)
+            let g = getRandomRange(0,255)
+            let b = getRandomRange(0,255)
+            box[i].style.backgroundColor = `rgb(${r},${g},${b})`
+        }
+        
+        const btn = document.getElementById("btn")
+        function refresh(){
+            window.location.reload()
+        }
+        btn.setAttribute("onclick","refresh()")
+       
+
+    </script>
+</body>
+</html>
