@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var arr = ['Hacking Initialised', 'Seraching for files', 'Processing data', 'Personal Files Found', 'Retrieving Passkeys', 'Cleaning up']
+
+        function dotloop(){
+            return new Promise(resolve=>{
+                setTimeout(()=>{
+                    resolve(console.log("loop wala hoon!"))
+                },1000)
+            })
+        }
+       async function timer(){
+            for (let i = 0; i < 3; i++) {
+                await dotloop()
+                
+            }
+        }
+        async function main(){
+            for (const item of arr) {
+            console.log(item)
+            await timer()
+        }
+
+        }
+
+        main()
+    </script>
+</body>
+</html>
+<script>

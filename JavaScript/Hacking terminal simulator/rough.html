@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: green;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hacking Initialised...
+    Seraching for files...
+    Processing data...
+    Personal Files Found...
+    Retrieving Passkeys... 
+    Cleaning up...  -->
+
+    <h1>>...</h1>
+
+    <script>
+        var dot = document.createElement('span')
+        dot.innerHTML = "."
+        function dotloop(){
+            return new Promise((resolve) =>{
+                
+                let last = document.querySelectorAll('div')
+               resolve( last[last.length -1 ].append(dot))
+            })
+        }
+        
+
+        async function dotPrinter(){
+
+                for (let i = 0; i < 3; i++) {
+
+                    await dotloop()
+                }
+        }
+
+        async function main() {
+        console.log("script initialised...")
+        var arr = ['Hacking Initialised', 'Seraching for files', 'Processing data', 'Personal Files Found', 'Retrieving Passkeys', 'Cleaning up']
+
+
+        for (const item of arr) {
+            var div = document.createElement('div')
+            div.innerHTML = `${item}`
+
+            document.body.append(div)
+            await dotPrinter()
+            
+            
+        }
+    }
+
+    main()
+
+    </script>
+</body>
+
+
+</html>
